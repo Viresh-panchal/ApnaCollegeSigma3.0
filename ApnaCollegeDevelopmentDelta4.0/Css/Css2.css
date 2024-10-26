@@ -1,0 +1,45 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+/* universal selector * its apply on every elements */
+h1 , p {
+    color:orangered;
+}
+/* same properties gives other element selector also use , */
+#myID {
+    background-color: green;
+}
+/* id use # */
+.myclass {
+    background-color: aqua;
+}
+/* class use . */
+h1 p {
+    color:crimson;
+}
+/* descendant selector elements in element properties added */
+/* descedant selector we can skip mid element */
+h1 + p {
+    background-color: palevioletred;
+}
+/* adjacent siblings combinator h1 then after only one paragraph change properties */
+h1 > p {
+    font-weight: bold;
+}
+/* child combinator only work one step in element */
+input [type="password"] {
+    color:green;
+}
+input [type] {
+    color:red;
+}
+/* attribute selector properties added if attribute match */
+p:nth-of-type(2n){
+    color: blueviolet;
+}
+/* :hover :active :checked :nth-of-type ::first-letter ::first-line ::selection */
+/* id is 100 power */
+/* class,attribute & pseudo-class is 10 power */
+/* element & pseudo - elemnt is 1 power */
+/* !important is 1000 power */
+/* :inherit */
